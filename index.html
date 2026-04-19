@@ -8,82 +8,77 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #1a1a1a;
+            color: #18181b;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
             background-color: #ffffff;
         }
         h1 {
-            font-size: 24px;
+            font-size: 2rem;
             font-weight: 300;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.1em;
             text-transform: uppercase;
             border-bottom: 1px solid #f4f4f5;
             padding-bottom: 20px;
             margin-bottom: 40px;
         }
-        h1 span {
-            color: #a1a1aa;
-        }
         h2 {
-            font-size: 12px;
+            font-size: 0.875rem;
             font-weight: 700;
-            letter-spacing: 0.4em;
+            letter-spacing: 0.2em;
             text-transform: uppercase;
             margin-top: 40px;
-            margin-bottom: 15px;
+            margin-bottom: 16px;
         }
-        p, ul {
-            font-size: 14px;
-            margin-bottom: 15px;
+        p {
+            margin-bottom: 16px;
             text-align: justify;
         }
         .last-updated {
-            font-size: 10px;
+            font-size: 0.75rem;
             color: #a1a1aa;
             text-transform: uppercase;
-            letter-spacing: 0.3em;
+            letter-spacing: 0.2em;
             margin-bottom: 50px;
         }
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-            text-underline-offset: 4px;
-            font-weight: 500;
-        }
         ul {
-            list-style-type: disc;
+            margin-bottom: 16px;
             padding-left: 20px;
         }
         li {
             margin-bottom: 8px;
         }
-        strong {
-            font-weight: 700;
+        a {
+            color: #18181b;
+            text-decoration: underline;
+            text-underline-offset: 4px;
         }
-        footer {
+        strong {
+            font-weight: 600;
+        }
+        .footer {
             margin-top: 60px;
             padding-top: 40px;
             border-top: 1px solid #f4f4f5;
             text-align: center;
-            font-size: 10px;
-            color: #a1a1aa;
-            text-transform: uppercase;
-            letter-spacing: 0.4em;
-            line-height: 2;
+            font-size: 0.75rem;
+            color: #71717a;
+            letter-spacing: 0.1em;
         }
     </style>
 </head>
 <body>
 
-    <h1>Privacy Policy <span>Focus Nest</span></h1>
-
-    <p class="last-updated">Last Updated: March 31, 2026</p>
+    <h1>Privacy Policy <span style="color: #a1a1aa;">Focus Nest</span></h1>
+    
+    <div class="last-updated">Last Updated: April 20.04, 2026</div>
 
     <section>
         <h2>1. Data Controller</h2>
-        <p>The data controller is the independent creator of the Focus Nest application (“Controller”).</p>
+        <p>
+            The data controller is <strong>Joanna Maleszka</strong>, an independent developer based in <strong>Poland</strong>, operating the Focus Nest application (“Controller”).
+        </p>
         <p>Contact: <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
     </section>
 
@@ -96,21 +91,28 @@
         <h2>3. Data Collection and App Permissions</h2>
         <p><strong>3.1 Personal Data:</strong> We do not collect name, email, or phone number.</p>
         <p><strong>3.2 Local Data & Technologies:</strong> All sessions and settings are stored locally on your device (SharedPreferences, WebView Local Storage). Only you can access this data.</p>
-        <p><strong>3.2.1 System Backups:</strong> If Android Backup is enabled, local App data may be encrypted in your personal Google Drive. We do not access these backups.</p>
+        <p><strong>3.2.1 System Backups:</strong> If Android system backup is enabled on your device, local App data may be included in your encrypted Google account backup. The Controller has no access to these backups.</p>
         <p><strong>3.3 Android Permissions:</strong></p>
         <ul>
             <li><strong>Foreground Service:</strong> Keep the timer active in background sessions.</li>
             <li><strong>Exact Alarms:</strong> Trigger session completion at the precise time.</li>
             <li><strong>Wake Lock & Full Screen Intent:</strong> Display completion screen on locked devices.</li>
             <li><strong>Disable Keyguard:</strong> Allow stopping alarms without unlocking.</li>
+            <li><strong>Notifications:</strong> Deliver alerts and timers when a session ends.</li>
+            <li><strong>Vibration:</strong> Provide haptic feedback for timer events.</li>
             <li><strong>Network & Internet:</strong> Verify purchases via RevenueCat and display personalized ads.</li>
         </ul>
-        <p><strong>3.4 Technical Data & Identifiers:</strong> We process device model, OS version, and App usage statistics. Third-party SDKs (AdMob, RevenueCat) process pseudonymous identifiers (AAID) and purchase tokens for fraud prevention and purchase validation only.</p>
+        <p><strong>3.4 Technical Data & Identifiers:</strong> We process device model, OS version, and App usage statistics. Usage statistics (such as session duration and integrity scores) are processed locally to provide you with in-app analytics and remain on your device. Third-party SDKs (AdMob, RevenueCat) process pseudonymous identifiers (AAID) and purchase tokens for fraud prevention and purchase validation only.</p>
     </section>
 
     <section>
-        <h2>4. Third-Party Services & Data Transfers</h2>
-        <p>We use <strong>Google</strong> (AdMob, Play Store) and <strong>RevenueCat</strong> for licensing and monetization. Data may be transferred to the U.S. We rely on Standard Contractual Clauses and the EU-U.S. Data Privacy Framework for data protection.</p>
+        <h2>4. Third-Party Services & International Transfers</h2>
+        <p>The App uses third-party services including:</p>
+        <ul>
+            <li><strong>Google</strong> (Google Play Services, AdMob) – <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a></li>
+            <li><strong>RevenueCat</strong> (Purchase validation and licensing) – <a href="https://www.revenuecat.com/privacy" target="_blank">Privacy Policy</a></li>
+        </ul>
+        <p>Data may be transferred outside the European Economic Area, including to the United States. Where required, transfers rely on Standard Contractual Clauses (SCCs) and/or the EU-U.S. Data Privacy Framework.</p>
     </section>
 
     <section>
@@ -120,7 +122,7 @@
             <li>Advertising ID (AAID)</li>
             <li>IP address</li>
             <li>Device identifiers</li>
-            <li>Approximate location (non-specific)</li>
+            <li>Approximate location derived from IP address by Google AdMob.</li>
             <li>Ad interactions and impressions</li>
             <li>Fraud prevention signals</li>
             <li>Limited diagnostics collected automatically</li>
@@ -140,7 +142,11 @@
 
     <section>
         <h2>8. Legal Basis (GDPR)</h2>
-        <p>EU users: consent for personalized ads (Art. 6(1)(a) GDPR).<br> Legitimate interest for app functionality, security, and Elite features (Art. 6(1)(f) GDPR).</p>
+        <ul>
+            <li><strong>Consent (Art. 6(1)(a) GDPR)</strong> – for personalized advertising.</li>
+            <li><strong>Contractual Necessity (Art. 6(1)(b) GDPR)</strong> – to provide and validate Elite premium features.</li>
+            <li><strong>Legitimate Interest (Art. 6(1)(f) GDPR)</strong> – for app functionality, fraud prevention, and security.</li>
+        </ul>
     </section>
 
     <section>
@@ -149,7 +155,7 @@
         <ul>
             <li><strong>Right to be Forgotten:</strong> Clear App storage or uninstall the App.</li>
             <li><strong>Data Portability:</strong> Export not supported at this time.</li>
-            <li><strong>California Privacy Rights (CCPA):</strong> Do not sell or share personal data; request deletion at <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a>.</li>
+            <li><strong>California Privacy Rights (CCPA/CPRA):</strong> We do not sell personal data. Request access, deletion, or opt-out at <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a>.</li>
         </ul>
     </section>
 
@@ -160,7 +166,7 @@
 
     <section>
         <h2>11. RevenueCat Disclosure</h2>
-        <p>RevenueCat processes one-time purchase tokens and receipts for license validation. No credit card data is collected. RevenueCat acts as a data processor under GDPR.</p>
+        <p>RevenueCat processes purchase receipts and transaction identifiers solely for license validation and fraud prevention. No credit card information is collected or stored by the Controller. RevenueCat acts as a data processor under GDPR.</p>
     </section>
 
     <section>
@@ -170,13 +176,13 @@
 
     <section>
         <h2>13. Changes to this Policy</h2>
-        <p>Updates may occur. Continued App use indicates acceptance. Latest version available online at: <a href="https://appfocusnest.github.io/privacy/">appfocusnest.github.io/privacy/</a>.</p>
+        <p>Updates may occur. Continued App use indicates acceptance. Latest version available online at: <a href="https://appfocusnest.github.io/privacy/" target="_blank">appfocusnest.github.io/privacy/</a>.</p>
     </section>
 
-    <footer>
+    <div class="footer">
         Latest version available online at:<br>
-        <a href="https://appfocusnest.github.io/privacy/" style="color: #71717a;">appfocusnest.github.io/privacy/</a>
-    </footer>
+        <a href="https://appfocusnest.github.io/privacy/" target="_blank">appfocusnest.github.io/privacy/</a>
+    </div>
 
 </body>
 </html>
