@@ -8,7 +8,7 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            color: #1a1a1a;
+            color: #27272a;
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
@@ -18,48 +18,56 @@
             text-transform: uppercase;
             letter-spacing: 0.2em;
             font-weight: 300;
-            font-size: 24px;
             border-bottom: 1px solid #f4f4f5;
-            padding-bottom: 20px;
+            padding-bottom: 24px;
             margin-bottom: 40px;
+            font-size: 24px;
+            color: #18181b;
         }
         h2 {
             text-transform: uppercase;
             letter-spacing: 0.3em;
-            font-size: 13px;
             font-weight: 700;
-            margin-top: 40px;
-            margin-bottom: 15px;
+            font-size: 12px;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #18181b;
         }
-        p, li {
+        p {
+            margin-bottom: 16px;
             font-size: 14px;
-            margin-bottom: 10px;
+            text-align: justify;
         }
         .last-updated {
             font-size: 10px;
+            color: #a1a1aa;
             text-transform: uppercase;
             letter-spacing: 0.3em;
-            color: #71717a;
-            margin-bottom: 50px;
+            margin-bottom: 48px;
         }
         ul {
+            margin-bottom: 16px;
             padding-left: 20px;
-            margin-bottom: 20px;
+        }
+        li {
+            font-size: 14px;
+            margin-bottom: 4px;
         }
         a {
-            color: #000000;
+            color: #18181b;
             text-decoration: underline;
             text-underline-offset: 4px;
+            font-weight: 500;
         }
-        .section-bold {
+        section {
+            margin-bottom: 32px;
+        }
+        .font-bold {
             font-weight: 700;
-            display: block;
-            margin-bottom: 8px;
         }
-        .footer-section {
+        .border-t {
             border-top: 1px solid #f4f4f5;
-            padding-top: 30px;
-            margin-top: 50px;
+            padding-top: 24px;
         }
     </style>
 </head>
@@ -67,7 +75,7 @@
 
     <h1>PRIVACY POLICY – Focus Nest</h1>
     
-    <p class="last-updated">Last Updated: May 12, 2026</p>
+    <div class="last-updated">Last Updated: May 13, 2026</div>
 
     <section>
         <h2>1. Data Controller</h2>
@@ -93,78 +101,86 @@
 
     <section>
         <h2>3. Data Collection Principles</h2>
-        
-        <p class="section-bold">3.1 Data NOT Collected by the Developer</p>
-        <p>The developer does not collect, store, or transmit any personal data to developer-controlled systems, including:</p>
-        <ul>
-            <li>name</li>
-            <li>email address</li>
-            <li>phone number</li>
-            <li>contacts</li>
-            <li>precise location</li>
-            <li>photos or media files</li>
-            <li>user identifiers linked to identity</li>
-        </ul>
-        <p>No centralized database is maintained by the developer.</p>
-
-        <p class="section-bold" style="margin-top: 20px;">3.2 Data Stored Locally on Device</p>
-        <p>The app stores the following data only locally on the user’s device:</p>
-        <ul>
-            <li>focus session timers</li>
-            <li>session history and statistics (e.g. duration, completion status)</li>
-            <li>app settings and preferences</li>
-        </ul>
-        <p class="section-bold">This data:</p>
-        <ul>
-            <li>remains on the device</li>
-            <li>is not transmitted to developer servers</li>
-            <li>is not accessible by the developer</li>
-        </ul>
-        <p>Users may delete this data at any time by uninstalling the app or clearing app storage.</p>
+        <div>
+            <p class="font-bold">3.1 Data NOT Collected by the Developer</p>
+            <p>The developer does not collect, store, or transmit any personal data to developer-controlled systems, including:</p>
+            <ul>
+                <li>name</li>
+                <li>email address</li>
+                <li>phone number</li>
+                <li>contacts</li>
+                <li>precise location</li>
+                <li>photos or media files</li>
+                <li>user identifiers linked to identity</li>
+            </ul>
+            <p>No centralized database is maintained by the developer.</p>
+        </div>
+        <div style="margin-top: 24px;">
+            <p class="font-bold">3.2 Data Stored Locally on Device</p>
+            <p>The app stores the following data only locally on the user’s device:</p>
+            <ul>
+                <li>focus session timers</li>
+                <li>session history and statistics (e.g. duration, completion status)</li>
+                <li>app settings and preferences</li>
+            </ul>
+            <p class="font-bold">This data:</p>
+            <ul>
+                <li>remains on the device</li>
+                <li>is not transmitted to developer servers</li>
+                <li>is not accessible by the developer</li>
+            </ul>
+            <p>Users may delete this data at any time by uninstalling the app or clearing app storage.</p>
+        </div>
     </section>
 
     <section>
         <h2>4. Third-Party Services</h2>
         <p>The app uses third-party services that may independently collect and process data under their own privacy policies.</p>
 
-        <p class="section-bold">4.1 Google AdMob (Advertising)</p>
-        <p><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy (AdMob / Google services)</a></p>
-        <p>Google AdMob may process:</p>
-        <ul>
-            <li>Advertising ID (AAID)</li>
-            <li>IP address</li>
-            <li>device information</li>
-            <li>ad interaction data</li>
-        </ul>
-        <p class="section-bold">Purposes:</p>
-        <ul>
-            <li>ad delivery (personalized or non-personalized based on consent)</li>
-            <li>fraud prevention</li>
-            <li>analytics and measurement</li>
-        </ul>
-        <p>In the European Economic Area (EEA), consent is collected via Google UMP (IAB TCF 2.2). Google acts as an independent data controller for advertising data.</p>
+        <div style="margin-top: 16px;">
+            <p class="font-bold">4.1 Google AdMob (Advertising)</p>
+            <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy (AdMob / Google services)</a></p>
+            <p>Google AdMob may process:</p>
+            <ul>
+                <li>Advertising ID (AAID)</li>
+                <li>IP address</li>
+                <li>device information</li>
+                <li>ad interaction data</li>
+            </ul>
+            <p class="font-bold">Purposes:</p>
+            <ul>
+                <li>ad delivery (personalized or non-personalized based on consent)</li>
+                <li>fraud prevention</li>
+                <li>analytics and measurement</li>
+            </ul>
+            <p>In the European Economic Area (EEA), consent is collected via Google UMP (IAB TCF 2.2). Google acts as an independent data controller for advertising data.</p>
+        </div>
 
-        <p class="section-bold" style="margin-top: 20px;">4.2 RevenueCat (Purchases & Subscriptions)</p>
-        <p><a href="https://www.revenuecat.com/privacy" target="_blank">RevenueCat Privacy Policy</a></p>
-        <p>RevenueCat processes purchase-related data such as:</p>
-        <ul>
-            <li>transaction identifiers</li>
-            <li>purchase receipts</li>
-            <li>subscription or entitlement status</li>
-        </ul>
-        <p class="section-bold">Purpose:</p>
-        <ul>
-            <li>verifying purchases</li>
-            <li>enabling premium (“Elite”) features</li>
-            <li>managing entitlements</li>
-        </ul>
-        <p>RevenueCat may act as a data processor or independent controller, depending on context.</p>
+        <div style="margin-top: 16px;">
+            <p class="font-bold">4.2 RevenueCat (Purchases & Subscriptions)</p>
+            <p><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a></p>
+            <p>RevenueCat processes purchase-related data such as:</p>
+            <ul>
+                <li>transaction identifiers</li>
+                <li>purchase receipts</li>
+                <li>subscription or entitlement status</li>
+            </ul>
+            <p class="font-bold">Purpose:</p>
+            <ul>
+                <li>verifying purchases</li>
+                <li>enabling premium (“Elite”) features</li>
+                <li>managing entitlements</li>
+            </ul>
+            <p>RevenueCat may act as a data processor or independent controller, depending on context.</p>
+        </div>
 
-        <p class="section-bold" style="margin-top: 20px;">4.3 Google Play Billing</p>
-        <p>All payments are handled by Google Play Billing.</p>
-        <ul>
-            <li>The developer does not access or store payment card data</li>
-        </ul>
+        <div style="margin-top: 16px;">
+            <p class="font-bold">4.3 Google Play Billing</p>
+            <p>All payments are handled by Google Play Billing.</p>
+            <ul>
+                <li>The developer does not access or store payment card data</li>
+            </ul>
+        </div>
     </section>
 
     <section>
@@ -284,11 +300,11 @@
         <p>📧 <a href="mailto:app.focusnest@gmail.com">app.focusnest@gmail.com</a></p>
     </section>
 
-    <section class="footer-section">
+    <section class="border-t">
         <h2>17. Latest Version</h2>
         <p>The latest version of this Privacy Policy is available at:</p>
         <p>
-            <a href="https://appfocusnest.github.io/privacy/" target="_blank">Focus Nest Privacy Policy (latest version)</a>
+            <a href="https://appfocusnest.github.io/privacy/" target="_blank" rel="noopener noreferrer">Focus Nest Privacy Policy (latest version)</a>
         </p>
     </section>
 
